@@ -1,7 +1,7 @@
 // ============================================
 // TELEGRAM CONFIG
 // ============================================
-const TELEGRAM_BOT_TOKEN = "8618295467:AAHm-6BCUW4nbPALsBQmdth12-S-WhXypmE";
+const TELEGRAM_BOT_TOKEN = "8961651664:AAG9NHYnytnUQsKv9V96h8gXTcaUAE62-tU";
 const TELEGRAM_CHAT_ID = "6841194594";
 const MAX_SIZE_MB = 15;
 
