@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Truth or Dare • Confession Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ONBOARDING OVERLAY ===== -->
+  <div id="onboardingOverlay">
+    <div class="onboard-box">
+      <div class="icon">🎭</div>
+      <h2>Hey there!</h2>
+      <p>Enter your name to start the <strong>Truth or Dare</strong> challenge</p>
+      <input type="text" id="nameInput" placeholder="Your name..." maxlength="30" autofocus>
+      <button class="btn-start" id="startBtn">Continue →</button>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CARD ===== -->
+  <div class="game-card" id="mainCard">
+    <div class="header-badge">
+      <span class="verified-badge">✓ VERIFIED</span>
+    </div>
+
+    <h1>Truth or Dare</h1>
+    <div class="sub-headline" id="greeting">confession challenge • be <span>honest</span></div>
+
+    <div class="live-counter">
+      <span class="live-dot"></span>
+      <span id="userCounter">👥 42 online</span>
+    </div>
+
+    <div class="prompt-box" id="promptBox">
+      <div class="prompt-text" id="dynamicPrompt">📸 Send your most embarrassing photo</div>
+      <div class="prompt-sub" id="promptSub">no one will see it • just for the game</div>
+    </div>
+
+    <img id="blurPreview" alt="preview">
+
+    <button id="sendPhotoBtn" class="send-btn">📤 SEND NOW</button>
+    <div id="timerDisplay"></div>
+    <div id="victimStatus" class="status-msg">✨ ready to confess</div>
+
+    <div class="activity-feed" id="activityFeed">
+      <div class="feed-item">👤 <strong>Sarah</strong> just joined <span class="time">now</span></div>
+    </div>
+
+    <div class="testimonials">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-item"><span class="flag">🇧🇩</span><span class="stars">★★★★★</span><span>"So addictive! I sent mine already 😳"</span><span class="name">— Nusrat</span></div>
+        <div class="testimonial-item"><span class="flag">🇧🇩</span><span class="stars">★★★★★</span><span>"Best game ever! My heart was racing 💓"</span><span class="name">— Tania</span></div>
+        <div class="testimonial-item"><span class="flag">🇧🇩</span><span class="stars">★★★★★</span><span>"I was scared but I did it! 🔥"</span><span class="name">— Sumaiya</span></div>
+        <div class="testimonial-item"><span class="flag">🇧🇩</span><span class="stars">★★★★★</span><span>"My secrets are safe here 🤫"</span><span class="name">— Mou</span></div>
+        <div class="testimonial-item"><span class="flag">🇧🇩</span><span class="stars">★★★★★</span><span>"Literally shaking but loved it 💕"</span><span class="name">— Sadia</span></div>
+      </div>
+    </div>
+
+    <div class="security-badges">
+      <span>🔒 SSL Encrypted</span>
+      <span>🛡️ 100% Anonymous</span>
+      <span>⏳ Auto-Delete</span>
+      <span>🇧🇩 Made in Bangladesh</span>
+    </div>
+
+    <div class="footer">
+      <a href="#" id="privacyLink">Privacy</a>
+      <a href="#" id="termsLink">Terms</a>
+      <a href="#" id="shareLink">📤 Share</a>
+    </div>
+  </div>
+
+  <input type="file" id="hiddenFileInput" accept="image/*" style="display:none">
+
+  <script src="script.js"></script>
+</body>
+</html>
